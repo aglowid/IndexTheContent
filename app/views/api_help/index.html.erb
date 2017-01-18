@@ -1,0 +1,29 @@
+<span class="left_panel">
+  <div class="table">
+    <%= render partial: 'index', locals: {index_arr: ApiIndexRenderer.user_api_index } %>
+  </div>  
+</span>
+<span class='right_panel'>  
+             
+</span>
+
+<%= render partial: 'api', locals: {
+                                 link_name: 'Get content from URL',
+                                 link_href: 'get_content_from_url',
+                                 link_method: 'POST',
+                                 original_link: api_get_content_from_url_path,
+                                 parameters: [
+                                         {name: 'URL', description: 'enter page url to get page content', required: 1}
+
+                                 ],
+                                 options: {}} %>
+
+<%= render partial: 'api', locals: {
+                                 link_name: 'List Contents',
+                                 link_href: 'list_contents',
+                                 link_method: 'GET',
+                                 original_link: api_list_contents_path,
+                                 parameters: [
+                                  
+                                 ],
+                                 options: {}} %>
