@@ -44,3 +44,4 @@ Things you may want to cover:
 For api help - visit http://localhost:3000/api_help/index
 On api help page, api list is available. and you can also call api from there. Response will be displayed to that page.
 
+If you are using host other than host: "http://localhost:3000" -> chnage host to secret.yml file to use api help.
